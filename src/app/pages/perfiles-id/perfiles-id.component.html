@@ -1,0 +1,63 @@
+<div class="row animated fadeIn m-0 justify-content-center align-items-center vh-100">
+
+
+
+  <div class="col-lg-8">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Perfil del usuario</h4>
+
+        <img src="{{perfil.avatar_url}}" class="w70">
+        <div >
+          <label for="exampleInputuname">ID GIT</label>
+          <div class="input-group">
+            <div class="input-group-addon"><i class="ti-user"></i></div>
+            <input type="text" name="nombre" class="form-control" placeholder="Id"
+              [(ngModel)]="perfil.idGit" required >
+          </div>
+        </div>
+        <div>
+          <label for="exampleInputuname">USUARIO GIT</label>
+          <div class="input-group">
+            <div class="input-group-addon"><i class="ti-user"></i></div>
+            <input type="text" name="nombre" class="form-control" placeholder="Usuario"
+              [(ngModel)]="perfil.login" required >
+          </div>
+        </div>
+        <div >
+          <label for="exampleInputuname">LUGAR</label>
+          <div class="input-group">
+            <div class="input-group-addon"><i class="ti-user"></i></div>
+            <input type="text" name="nombre" class="form-control" placeholder="Lugar"
+              [(ngModel)]="perfil.location" required >
+          </div>
+        </div>
+        <div>
+          <label for="exampleInputuname">TIPO USUARIO</label>
+          <div class="input-group">
+            <div class="input-group-addon"><i class="ti-user"></i></div>
+            <input type="text" name="nombre" class="form-control" placeholder="tipo"
+              [(ngModel)]="perfil.type" required >
+          </div>
+        </div>
+<br>
+
+
+
+         <div>
+        <button type="submit" class="btn btn-primary waves-effect waves-light m-r-10 btn-sm" (click)="actualizarPerfil()">
+          <i class="fa fa-save"></i> ACTUALIZAR</button>
+          &nbsp;&nbsp;
+          <button type="submit" class="btn btn-danger btn-sm" (click)="delete()"> <i
+              class="fa fa-check"></i>ELIMINAR</button>
+              &nbsp;&nbsp;
+
+              <a class="btn btn-info btn-sm" href="#/perfilesGenerales"> <i
+                class="fa fa-check"></i>REGRESAR</a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

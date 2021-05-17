@@ -1,0 +1,53 @@
+form {
+  margin-top: 90px;
+}
+
+.no-border {
+  border-style: none;
+}
+
+.space {
+  margin-right: 7px;
+}
+
+.redirect {
+  color: #393c40;
+}
+
+.redirect:hover {
+  color: rgb(0, 17, 248);
+}
+
+.bottom-space {
+  margin-bottom: 10px;
+}
+
+button>.badge {
+  cursor: crosshair;
+}
+
+.date {
+  float: right;
+}
+
+.btn-hov:hover {
+  background-color: #fff;
+}
+
+.s-top{
+  top: 60px;
+}
+
+.s-top-nav{
+  top: 55px;
+}
+
+div>a{
+  color: #393c40;
+}
+
+.profile-thumb{
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}

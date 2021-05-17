@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+
+
+.w70 {
+  width: 70px;
+}
+
+.w50 {
+  width: 40px;
+}
+.img-50 {
+  width: 50px;
+}

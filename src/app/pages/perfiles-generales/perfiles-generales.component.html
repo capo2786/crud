@@ -1,0 +1,44 @@
+<br>
+<br>
+<br>
+<div class="row animated fadeIn tabla">
+  <div class=" container p-3 " class="col-sm">
+    <h3 align="center" id="color">PERFILES</h3>
+  </div>
+
+
+  <table class="table table-hover table-responsive tabla table-bordered">
+    <thead>
+      <tr>
+        <th scope="col" COLSPAN=1 style="background: azure">IMAGEN</th>
+        <th scope="col" COLSPAN=1 style="background: azure">ID</th>
+        <th scope="col" COLSPAN=1 style="background: azure">USUARIO</th>
+        <th scope="col" COLSPAN=1 style="background: azure">LOCALIDAD</th>
+        <th scope="col" COLSPAN=1 style="background: azure">TIPO</th>
+
+        <th scope="col" COLSPAN=1 style="background: azure">ACCIÓN</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let perfil of perfiles">
+        <td class="w70">
+          <img [src]="perfil.avatar_url" class="img-50 img-circle pointer">
+        </td>
+        <td> {{perfil.idGit}}</td>
+        <td>{{perfil.login}}</td>
+        <td>{{perfil.location}}</td>
+        <td>{{perfil.type}}</td>
+
+
+        <td>
+          <button type="button" class="btn btn-outline-primary"
+          [routerLink]="['/IdPerfil/',perfil._id]" routerLinkActive="router-link-active"
+            style="width: 140px;height: 75;font-size: 70%;"><b>EDITAR</b></button>
+        </td>
+      </tr>
+
+    </tbody>
+
+  </table>
+</div>
